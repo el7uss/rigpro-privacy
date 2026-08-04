@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — RIG-PRO Scanner</title>
+<meta name="description" content="Privacy policy for the RIG-PRO Scanner Android app. No data is collected, transmitted, or shared.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c2226;
+    --muted: #5c6b76;
+    --rule: #e2e8ed;
+    --accent: #16425b;
+    --band: #f4f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12171a;
+      --fg: #e6ecf0;
+      --muted: #9aa8b2;
+      --rule: #2a3238;
+      --accent: #7fb2d4;
+      --band: #1a2126;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 .35rem; letter-spacing: -.01em; }
+  h2 {
+    font-size: 1.12rem; margin: 2.4rem 0 .6rem;
+    padding-top: 1.2rem; border-top: 1px solid var(--rule); color: var(--accent);
+  }
+  .updated { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  .summary {
+    background: var(--band); border-left: 3px solid var(--accent);
+    padding: 1rem 1.15rem; border-radius: 0 6px 6px 0; margin: 0 0 .5rem;
+  }
+  .summary p { margin: 0; }
+  table { border-collapse: collapse; width: 100%; margin: .85rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; }
+  code { background: var(--band); padding: .12em .4em; border-radius: 3px; font-size: .9em; }
+  a { color: var(--accent); }
+  footer { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+  .table-wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Privacy Policy — RIG-PRO Scanner</h1>
+  <p class="updated">Last updated: 4 August 2026</p>
+
+  <p>RIG-PRO Scanner (“the app”) is a document and expense-receipt scanner for
+  field teams. This policy explains what the app does with your information.</p>
+
+  <div class="summary">
+    <p><strong>The app does not collect, transmit, or share any personal data.</strong>
+    Everything you scan stays on your device. The app has no user accounts, no
+    servers, and no analytics.</p>
+  </div>
+
+  <h2>What the app stores, and where</h2>
+  <p>All data is written to the app’s private storage area on your device:</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Data</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>Scanned page images</td><td>The documents and receipts you capture</td></tr>
+      <tr><td>Receipt details (vendor, amount, currency, category, date, notes)</td><td>Expense tracking</td></tr>
+      <tr><td>Handover records and their generated PDF/Excel files</td><td>Your audit trail</td></tr>
+      <tr><td>Signatures captured on device</td><td>Proof of handover</td></tr>
+      <tr><td>Company name and logo, if you set them</td><td>Branding on exported sheets</td></tr>
+      <tr><td>App settings, including an optional lock PIN</td><td>Preferences and security</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>If you enable the optional app lock, your PIN is stored only as a salted
+  SHA-256 hash — the PIN itself is never saved.</p>
+  <p>No part of this data is uploaded anywhere. Uninstalling the app removes it.</p>
+
+  <h2>Text recognition (OCR)</h2>
+  <p>The app reads amounts and vendor names from receipt images using Google ML
+  Kit’s on-device text recognition. The recognition model is bundled inside the
+  app and runs entirely on your device. <strong>Receipt images are not sent to
+  Google or to any other server for processing.</strong></p>
+
+  <h2>Camera and photos</h2>
+  <p>Scanning uses the Android system document scanner, which runs in Google
+  Play Services and returns images to the app. You may also import images you
+  already have. Images are used only to create your documents and receipts.</p>
+
+  <h2>Sharing and export</h2>
+  <p>When you share or export a PDF, Excel, or CSV file, the app hands that file
+  to whichever app you choose (email, messaging, cloud storage, printing). That
+  transfer happens because you asked for it, and what happens to the file
+  afterwards is governed by the app or service you chose.</p>
+
+  <h2>Network access</h2>
+  <p>The app declares the <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>
+  permissions because the bundled Google ML Kit library requires them. The app
+  itself makes no network requests and sends no data off the device.</p>
+
+  <h2>Data sharing and third parties</h2>
+  <p>The app contains no advertising, no analytics, and no third-party tracking.
+  No data is sold or shared.</p>
+
+  <h2>Children</h2>
+  <p>The app is a workplace tool and is not directed at children.</p>
+
+  <h2>Your control over your data</h2>
+  <p>All data lives on your device. You can delete individual receipts and
+  documents in the app, remove stored images via Settings, or uninstall the app
+  to remove everything. The backup feature creates a file that you control and
+  store wherever you choose.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the “Last updated” date above will change with it.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy:
+  <a href="mailto:elhusseiny1111@gmail.com">elhusseiny1111@gmail.com</a></p>
+
+  <footer>RIG-PRO Scanner · Android</footer>
+
+</main>
+</body>
+</html>
