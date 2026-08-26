@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Milim</title>
+<meta name="description" content="Privacy policy for the Milim Android app. No data is collected, transmitted, or shared. Milim has no internet permission.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1d1f;
+    --muted: #6b7280;
+    --rule: #e4e8eb;
+    --accent: #005669;
+    --band: #f1f3f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121517;
+      --fg: #e8ebee;
+      --muted: #9ba3ae;
+      --rule: #32383d;
+      --accent: #4fc3d9;
+      --band: #1e2225;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 .35rem; letter-spacing: -.01em; }
+  h2 {
+    font-size: 1.12rem; margin: 2.4rem 0 .6rem;
+    padding-top: 1.2rem; border-top: 1px solid var(--rule); color: var(--accent);
+  }
+  .updated { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  .summary {
+    background: var(--band); border-left: 3px solid var(--accent);
+    padding: 1rem 1.15rem; border-radius: 0 6px 6px 0; margin: 0 0 .5rem;
+  }
+  .summary p { margin: 0; }
+  table { border-collapse: collapse; width: 100%; margin: .85rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; }
+  code { background: var(--band); padding: .12em .4em; border-radius: 3px; font-size: .9em; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.15rem; }
+  li { margin: .3rem 0; }
+  footer { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+  .table-wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Privacy Policy — Milim</h1>
+  <p class="updated">Last updated: 27 August 2026</p>
+
+  <p>Milim (“the app”) is an offline personal spending tracker. This policy
+  describes what the app does with your information. The short version is that
+  it does not send any of it anywhere, because it has no way to.</p>
+
+  <div class="summary">
+    <p><strong>Milim has no servers, no account, no analytics and no internet
+    permission.</strong> Every piece of information it holds stays in the app’s
+    private storage on your phone until you delete the app or export it
+    yourself.</p>
+  </div>
+
+  <h2>What Milim reads</h2>
+
+  <p><strong>Notifications, only if you switch it on.</strong> Milim can use
+  Android’s notification access to read alerts as they appear in your
+  notification shade, which is how a card purchase is recorded without you
+  typing it in.</p>
+
+  <p>Three things about this are worth being precise about:</p>
+  <ul>
+    <li>Android grants notification access as one switch, so the app
+    <em>sees</em> every notification your phone posts. Milim does not record
+    them. When an alert arrives from a sender you have not marked as a bank,
+    the app keeps only the sender’s name and a short example of the message —
+    <strong>with every number removed</strong> — so it can offer that sender to
+    you on the setup screen. That means no verification code, card number or
+    amount from an unapproved sender is ever stored. Nothing is filed as
+    spending until you tick that sender.</li>
+    <li>Notifications from chat and social apps — WhatsApp, Messenger,
+    Facebook, Instagram, Telegram and others — are discarded the moment they
+    arrive and are never stored at all.</li>
+    <li>Notification access is optional. If you never grant it, everything else
+    in the app still works and you add spending by pasting a message in,
+    sharing one from your messaging app, or typing it.</li>
+  </ul>
+
+  <p>You can withdraw it at any time in Android Settings → Notifications →
+  Notification access, or by using “Stop tracking” inside Milim.</p>
+
+  <p><strong>Messages you hand over.</strong> Text you paste into the app or
+  share into it from another app is read the same way and stored the same
+  way.</p>
+
+  <p><strong>What you type.</strong> Cash transactions, categories, budgets,
+  assets, debts, gold weights and the prices you enter.</p>
+
+  <h2>What Milim stores, and where</h2>
+  <p>All of it in the app’s own private directory on your device:</p>
+  <ul>
+    <li>Transactions read from bank messages, including the original message
+    text, so a misreading can be corrected later</li>
+    <li>The rules you have taught it about your bank’s message wording</li>
+    <li>Categories, merchants and the category you filed each merchant under</li>
+    <li>Budgets and which budget warnings have already been shown</li>
+    <li>Assets, debts and gold holdings, with the values and prices you
+    entered</li>
+    <li>Your settings, including which senders you chose to track</li>
+    <li>If you set an app lock: a PBKDF2 hash of your PIN, never the PIN
+    itself</li>
+  </ul>
+
+  <p>Android’s automatic cloud backup is switched <strong>off</strong> for this
+  app, so none of this is copied to Google Drive. Device-to-device transfer is
+  switched off for the same reason. To move to a new phone, use the app’s own
+  backup, which produces a file you control and can encrypt with a password you
+  choose.</p>
+
+  <h2>What Milim sends</h2>
+  <p>Nothing. The app requests no internet permission. There is no analytics,
+  no crash reporting, no advertising, and no third-party SDK that collects
+  anything.</p>
+
+  <p>Exchange rates and gold prices are typed in by you, because there is
+  nothing in the app that could fetch them.</p>
+
+  <p>The About screen offers links to this policy, to
+  <a href="https://www.rigprosolutions.com">rigprosolutions.com</a> and to an
+  email address. Opening one hands the address to the browser or mail app you
+  already have; Milim itself never opens a connection, which is why it still
+  declares no <code>INTERNET</code> permission.</p>
+
+  <h2>Sharing</h2>
+  <p>Milim never shares your data with anyone. The only way information leaves
+  your phone is when you deliberately export it — a CSV spreadsheet or a backup
+  file — and then it goes wherever you send it, which is your choice and
+  outside this app.</p>
+
+  <h2>Permissions, and why each one exists</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Notification access</td><td>Optional. Reads bank alerts so purchases record themselves.</td></tr>
+      <tr><td>Post notifications</td><td>To warn you when a budget is running low.</td></tr>
+      <tr><td>Biometric / fingerprint</td><td>Optional. To unlock the app instead of typing the PIN.</td></tr>
+      <tr><td>Vibrate</td><td>So a budget warning can buzz. Added by the notification component.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>That is the whole list. Milim does <strong>not</strong> request permission
+  to read SMS, contacts, location, the camera, or files outside what you
+  explicitly pick — and it does not request internet access, which is what
+  makes the rest of this policy something you can check rather than something
+  you have to believe.</p>
+
+  <h2>Children</h2>
+  <p>Milim is not directed at children and collects nothing from anyone.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Uninstalling the app deletes everything it holds. There is no copy
+  anywhere else for us to delete, and no account to close.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the “Last updated” date above changes with it, and
+  the new version is published at this address before the release it applies
+  to.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy:
+  <a href="mailto:elhusseiny1111@gmail.com">elhusseiny1111@gmail.com</a></p>
+
+  <footer>Milim by RIG-PRO · Android · © 2026 RIG PRO Solutions</footer>
+
+</main>
+</body>
+</html>
